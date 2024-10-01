@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="calculator-container">
+            <div class="display-container">
+                <input class="display" readonly type="text">
+            </div>
+
+            <div class="keys-container">
+                <button class="numbers-button" onclick="
+                    addElement('7');   
+                ">7</button>
+                <button class="numbers-button" onclick="
+                    addElement('8');
+                ">8</button>
+                <button class="numbers-button" onclick="
+                    addElement('9');
+                ">9</button>
+                <button class="symbols-button" onclick="
+                    addElement('+');
+                ">+</button>
+    
+                <button class="numbers-button" onclick="
+                    addElement('4');
+                ">4</button>
+                <button class="numbers-button" onclick="
+                    addElement('5');
+                ">5</button>
+                <button class="numbers-button" onclick="
+                    addElement('6');
+                ">6</button>
+                <button class="symbols-button" onclick="
+                    addElement('-');
+                ">-</button>
+    
+                <button class="numbers-button" onclick="
+                    addElement('1');
+                ">1</button>
+                <button class="numbers-button" onclick="
+                    addElement('2');
+                ">2</button>
+                <button class="numbers-button" onclick="
+                    addElement('3');
+                ">3</button>
+                <button class="symbols-button" onclick="
+                    addElement('x');
+                ">x</button>
+    
+                <button class="delete-button" onclick="
+                    deleteEverything();
+                ">C</button>
+                <button class="numbers-button" onclick="
+                    addElement('0');
+                ">0</button>
+                <button class="symbols-button" onclick="
+                    computeResult();
+                ">=</button>
+                <button class="symbols-button" onclick="
+                    addElement('/');
+                ">/</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
